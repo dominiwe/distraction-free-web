@@ -89,4 +89,3 @@ m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button:has-text(/^Repor
 ! remove comment action button
 m.youtube.com##:matches-path(/^/watch.*$/).comment-menu.icon-button
 
-! end

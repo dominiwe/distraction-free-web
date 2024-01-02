@@ -1,4 +1,6 @@
 ! Title: Distraction Free Web filters
+! Updated: 2024-01-01T19:08:00Z
+! Expires: 1 day (update frequency)
 ! Description: Personal filters to make various web pages less distracting.
 ! Homepage: https://github.com/dominiwe/distraction-free-web
 ! License: https://github.com/dominiwe/distraction-free-web/blob/main/LICENSE
