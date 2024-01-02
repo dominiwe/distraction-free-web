@@ -1,0 +1,90 @@
+! https://www.youtube.com
+
+! homepage small left sidebar
+youtube.com##ytd-mini-guide-renderer.ytd-app.style-scope
+
+! homepage top chip/category bar
+youtube.com###scroll-container > .ytd-feed-filter-chip-bar-renderer.style-scope
+
+! homepage video recommendations
+youtube.com##:matches-path(/^/$/).ytd-two-column-browse-results-renderer.style-scope > .ytd-rich-grid-renderer.style-scope
+
+! navbar sign in button
+youtube.com###buttons > ytd-button-renderer.ytd-masthead.style-scope > yt-button-shape
+
+! navbar voice search icon
+youtube.com##.yt-spec-button-shape-next--icon-only-default.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--text.yt-spec-button-shape-next
+
+! navbar settings google settings
+youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer.style-scope:nth-of-type(2)
+
+! watch page recommended videos
+youtube.com###secondary
+
+! watch page playlist button
+youtube.com##.ytd-menu-renderer.style-scope.yt-spec-button-view-model
+
+! youtube watch page subscribe button
+youtube.com###subscribe-button > .ytd-watch-metadata.style-scope
+
+! youtube watch page description
+youtube.com###bottom-row
+
+! youtube watch page comments
+youtube.com###comments > .ytd-comments.style-scope
+
+! youtube left sidebar hamburger button
+youtube.com###guide-button
+
+! youtube left sidebar
+youtube.com###guide
+
+! youtube search page reels suggestions
+youtube.com##ytd-reel-shelf-renderer
+
+! youtube channel page subscribe button
+youtube.com##:matches-path(/^/@.*$/).ytd-c4-tabbed-header-renderer.style-scope.channel-action
+
+! hide shorts chip button in results
+youtube.com##:matches-path(/^/results\?search_query.*$/)yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer.style-scope:has-text(/^Shorts/)
+
+! various subscribe buttons
+youtube.com##.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled.yt-spec-button-shape-next:has-text(/^Subscribe$/i)
+
+! complete shorts viewer
+youtube.com##:matches-path(/^/shorts/.*$/)#shorts-container
+
+! shorts viewer button
+youtube.com##:matches-path(/^/shorts/.*$/)#navigation-button-down
+
+! history notice
+youtube.com##:matches-path(/^/$/)#dismissible
+
+! https://m.youtube.com
+
+! homepage browse page
+m.youtube.com##:matches-path(/^/$/)ytm-browse
+
+! most menu items
+m.youtube.com##ytm-multi-page-menu-section-renderer:has-text(/^(Sign in)|(Feedback)|(YouTube.*)$/)
+
+! remove library from bottom bar
+m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-library.pivot-bar-item-tab)
+
+! remove shorts from bottom bar
+m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts.pivot-bar-item-tab)
+
+! remove reels shelf
+m.youtube.com##ytm-reel-shelf-renderer
+
+! remove watch page reccs
+m.youtube.com##:matches-path(/^/watch.*$/)ytm-item-section-renderer.single-column-watch-next-modern-panels.scwnr-content:nth-of-type(2)
+
+! remove watch page save button
+m.youtube.com##.icon-add_to_playlist.slim_video_action_bar_renderer_button:has-text(/^Save$/)
+
+! remove watch page report button
+m.youtube.com##.icon-flag.slim_video_action_bar_renderer_button:has-text(/^Report$/)
+
+! remove comment action button
+m.youtube.com##:matches-path(/^/watch.*$/).comment-menu.icon-button
